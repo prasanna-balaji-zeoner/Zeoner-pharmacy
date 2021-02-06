@@ -32,7 +32,7 @@ $expiry = join_product_table();
                 <th class="text-center" style="width: 50px;">#</th>
                 <th> Product name </th>
                 <th class="text-center" style="width: 15%;"> Quantity</th>
-                <th class="text-center" style="width: 15%;"> Total </th>
+                <th class="text-center" style="width: 15%;"> Buy Price </th>
                 <th class="text-center" style="width: 15%;"> Expired date</th>
              </tr>
             </thead>
@@ -43,8 +43,8 @@ $expiry = join_product_table();
              <tr>
                <td class="text-center"><?php echo count_id();?></td>
                <td><?php echo remove_junk($exp['name']); ?></td>
-               <td class="text-center"><?php echo (int)$exp['qty']; ?></td>
-               <td class="text-center"><?php echo remove_junk($exp['price']); ?></td>
+               <td class="text-center"><?php echo (int)$exp['quantity']; ?></td>
+               <td class="text-center"><?php echo remove_junk($exp['buy_price']); ?></td>
                <td class="text-center"><?php echo $exp['exp_date']; ?></td>
              </tr>
              <?php }?>
