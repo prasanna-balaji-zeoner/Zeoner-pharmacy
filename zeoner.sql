@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `oswa_inv`
+-- Database: `zeoner`
 --
 
 -- --------------------------------------------------------
@@ -57,7 +57,8 @@ CREATE TABLE IF NOT EXISTS `products` (
   `sale_price` decimal(25,2) NOT NULL,
   `categorie_id` int(11) unsigned NOT NULL,
   `media_id` int(11) DEFAULT '0',
-  `date` datetime NOT NULL
+  `date` datetime NOT NULL,
+  `exp_date` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
