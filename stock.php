@@ -40,9 +40,10 @@
                 <td class="text-center"><?php echo count_id();?></td>
                 <td> <?php echo remove_junk($product['name']); ?></td>
                 <td class="text-center" > <?php echo remove_junk($product['categorie']); ?></td>
-                <td class="text-center" style="color:red;"> <?php echo remove_junk($product['quantity']); ?><br><div class="pull-right">
-           <a href="add_product.php" class="btn btn-primary">Add Stock</a>
-         </div></td>
+
+                <td class="text-center" style="color:red;"> <?php echo remove_junk($product['quantity']);?><br>
+                <div class="pull-right"><a href="add_product.php" class="btn btn-primary">Add Stock</a></div></td>
+                
                 <td class="text-center"> <?php echo remove_junk($product['buy_price']); ?></td>
                 <td class="text-center"> <?php echo remove_junk($product['sale_price']); ?></td>
                 <td class="text-center"> <?php echo read_date($product['date']); ?></td>
