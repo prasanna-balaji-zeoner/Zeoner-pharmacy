@@ -5,7 +5,7 @@
    page_require_level(3);
 ?>
 <?php
-$sales = find_all_sale();
+$expiry = join_product_table();
 ?>
 <?php include_once('layouts/header.php'); ?>
 <div class="row">
@@ -37,14 +37,17 @@ $sales = find_all_sale();
              </tr>
             </thead>
            <tbody>
-             <?php foreach ($sales as $sale):?>
+
+             <?php foreach ($expiry as $exp):?>
+              <?php if ($exp['date'] >= date()) {?>
              <tr>
                <td class="text-center"><?php echo count_id();?></td>
-               <td><?php echo remove_junk($sale['name']); ?></td>
-               <td class="text-center"><?php echo (int)$sale['qty']; ?></td>
-               <td class="text-center"><?php echo remove_junk($sale['price']); ?></td>
-               <td class="text-center"><?php echo $sale['date']; ?></td>
+               <td><?php echo remove_junk($exp['name']); ?></td>
+               <td class="text-center"><?php echo (int)$exp['qty']; ?></td>
+               <td class="text-center"><?php echo remove_junk($exp['price']); ?></td>
+               <td class="text-center"><?php echo $exp['exp_date']; ?></td>
              </tr>
+             <?php }?>
              <?php endforeach;?>
            </tbody>
          </table>
