@@ -58,7 +58,7 @@ CREATE TABLE IF NOT EXISTS `products` (
   `categorie_id` int(11) unsigned NOT NULL,
   `media_id` int(11) DEFAULT '0',
   `date` datetime NOT NULL,
-  `exp_date` datetime NOT NULL
+  `exp_date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------

@@ -39,9 +39,10 @@ $expiry = join_product_table();
            <tbody>
 
              <?php foreach ($expiry as $exp):?>
-              <?php if ($exp['date'] >= date()) {?>
+              <?php if (read_date($exp['date']) > date('Y-m-d')) {?>
              <tr>
                <td class="text-center"><?php echo count_id();?></td>
+               <?php //echo date('Y-m-d');?>
                <td><?php echo remove_junk($exp['name']); ?></td>
                <td class="text-center"><?php echo (int)$exp['quantity']; ?></td>
                <td class="text-center"><?php echo remove_junk($exp['buy_price']); ?></td>
