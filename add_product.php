@@ -24,7 +24,7 @@
      }
      $date    = make_date();
      $query  = "INSERT INTO products (";
-     $query .=" name,quantity,buy_price,sale_price,categorie_id,media_id,date,exp";
+     $query .=" name,quantity,buy_price,sale_price,categorie_id,media_id,date,exp_date";
      $query .=") VALUES (";
      $query .=" '{$p_name}', '{$p_qty}', '{$p_buy}', '{$p_sale}', '{$p_cat}', '{$media_id}', '{$date}','{$p_exp}'";
      $query .=")";
