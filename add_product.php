@@ -63,6 +63,8 @@
         <div class="panel-body">
          <div class="col-md-12">
           <form method="post" action="add_product.php" class="clearfix">
+
+
               <div class="form-group">
                 <div class="input-group">
                   <span class="input-group-addon">
@@ -71,6 +73,10 @@
                   <input type="text" class="form-control" name="product-title" placeholder="Product Title">
                </div>
               </div>
+
+
+
+
               <div class="form-group">
                 <div class="row">
                   <div class="col-md-6">
@@ -96,7 +102,7 @@
 
               <div class="form-group" >
                <div class="row">
-                 <div class="col-md-4 ">
+                 <div class="col-md-4">
                    <div class="input-group">
                      <span class="input-group-addon">
                       <i class="glyphicon glyphicon-shopping-cart"></i>
@@ -110,7 +116,6 @@
                        <i class="">BUY COST</i>
                      </span>
                      <input type="number" class="form-control" name="buying-price" placeholder="Buying Price">
-                     <span class="input-group-addon">.00</span>
                   </div>
                  </div>
                   <div class="col-md-4">
@@ -119,7 +124,6 @@
                         <i class="">SELL COST</i>
                       </span>
                       <input type="number" class="form-control" name="saleing-price" placeholder="Selling Price">
-                      <span class="input-group-addon">.00</span>
                    </div>
                   </div>
                   <div class="col-md-4">
