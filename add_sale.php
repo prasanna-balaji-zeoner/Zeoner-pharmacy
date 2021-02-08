@@ -44,10 +44,11 @@
     <form method="post" action="ajax.php" autocomplete="off" id="sug-form">
         <div class="form-group">
           <div class="input-group">
-            <span class="input-group-btn">
-              <button type="submit" class="btn btn-primary">Find It</button>
-            </span>
+            
             <input type="text" id="sug_input" class="form-control" name="title"  placeholder="Search for product name">
+            <span class="input-group-btn">
+              <button type="submit" class="btn btn-primary">Add for Sale</button>
+            </span>
          </div>
          <div id="result" class="list-group"></div>
         </div>
@@ -61,7 +62,7 @@
       <div class="panel-heading clearfix">
         <strong>
           <span class="glyphicon glyphicon-th"></span>
-          <span>Sale Eidt</span>
+          <span>Sale Edit</span>
        </strong>
       </div>
       <div class="panel-body">
