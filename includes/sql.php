@@ -219,6 +219,21 @@ function tableExists($table){
     return find_by_sql($sql);
 
    }
+    /*--------------------------------------------------------------*/
+   /* Function for Finding all product name
+   /* JOIN with categorie  and media database table
+   /*--------------------------------------------------------------*/
+  function join_product_table_expiry(){
+    global $db;
+    $sql  =" SELECT p.id,p.name,p.quantity,p.buy_price,p.sale_price,p.media_id,p.date,p.exp_date,c.name";
+   $sql  .=" AS categorie,m.file_name AS image";
+   $sql  .=" FROM products p";
+   $sql  .=" LEFT JOIN categories c ON c.id = p.categorie_id";
+   $sql  .=" LEFT JOIN media m ON m.id = p.media_id";
+   $sql  .=" ORDER BY p.exp_date DESC";
+   return find_by_sql($sql);
+
+  }
   /*--------------------------------------------------------------*/
   /* Function for Finding all product name
   /* Request coming from ajax.php for auto suggest
