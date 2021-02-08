@@ -17,8 +17,8 @@
       <span>Products</span>
     </a>
     <ul class="nav submenu">
-       <li><a href="product.php">Manage products</a> </li>
-       <li><a href="add_product.php">Add product</a> </li>
+      <li><a href="add_product.php">Add product</a> </li>
+      <li><a href="product.php">Manage products</a> </li>
    </ul>
   </li>
   <!-- <li>
