@@ -28,7 +28,7 @@
      $query .=") VALUES (";
      $query .=" '{$p_name}', '{$p_qty}', '{$p_buy}', '{$p_sale}', '{$p_cat}', '{$media_id}', '{$date}','{$p_exp}'";
      $query .=")";
-     $query .=" ON DUPLICATE KEY UPDATE name='{$p_name}'";
+     $query .=" ON DUPLICATE KEY UPDATE name='{$p_name}',quantity=quantity+'{$p_qty}'";
      if($db->query($query)){
        $session->msg('s',"Product added ");
        redirect('add_product.php', false);
